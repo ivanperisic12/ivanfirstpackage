@@ -1,0 +1,15 @@
+---
+title: "MaxTemp Analysis"
+author: "Ivan Perisic"
+output: html_document
+---
+
+
+```{r}
+library(IvanFirstPackage)
+library(ggplot2)
+
+data("MaxTemp")
+
+ggplot(MaxTemp, aes(x = Date, y = MaxTemp)) +
+  geom_line()
